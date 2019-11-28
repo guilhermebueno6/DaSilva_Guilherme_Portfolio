@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
 
   //res.sendFile(path.join(__dirname + '/views/index.html'));
 
-  res.render('home', { message: "hi there!", anothermessage: "This is easy!" } );
+  res.render('home', { message: "Welcome", anothermessage: "This is easy!" } );
   // this builds localhost:3000/views/index.html
 })
 
@@ -36,7 +36,7 @@ app.get('/contact', (req, res) => {
   res.render('contact', { message: "What is your name?" })
 })
 
-app.get('/users', (req, res) => {
+app.get('home', (req, res) => {
   sql.getConnection((err, connection) => {
     if (err) {
       return console.log(err.message);
