@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
 //Variables 
-$StdFont : 'Sulphur Point', sans-serif;
-$textColor: black;
-$mobileSize:20px;
+    $StdFont : 'Sulphur Point', sans-serif;
+    $textColor: black;
+    $mobileTitle:24px;
+    $mobileBody:14px;
 //End of Variables
+
 main{
+    text-align: center;
     
     width: 100vw;
     height: 100vh;
@@ -13,10 +16,15 @@ body{
     margin: 0;
 }
 @media screen and(max-width:415px){
+    h1{
+        font-size: $mobileTitle;
+    }
+    p{
+        font-size: $mobileBody;
+    }
     nav ul li{
         height: 16px;
         overflow: hidden;
-        display: inline;
         margin-bottom: 30px;
         font-family: $StdFont;
     }
@@ -55,20 +63,29 @@ body{
         width: 50px;
         height: 50px;
     }
+    
+    
     #navWrapper{
         width: 0;
+        max-height: 0;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         justify-content: start;
         opacity: 0;
-        border: 1px solid $textColor;
-        transition: all .5s ease-in-out;        
+        border:1px solid black!important;
+        transition: width .5s ease-in-out,opacity .5s ease-in-out, max-height .5s ease-in-out .5s;  
+       
+           
     }
     .showMenu{
+        
         opacity: 1!important;
         margin-right: 3px;
+        max-height: 230px!important;
        width: 45vw!important;
+       
+      
        
 
     }
@@ -79,6 +96,12 @@ body{
         right: 0;
         
     }
+    #aboutBody{
+        margin: auto;
+        width:80%;
+        align-self: center;
+    }
+    
    
     
 }
