@@ -1,31 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
 main {
+  font-family: "Sulphur Point", sans-serif;
   text-align: center;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+}
 
 @media screen and (max-width: 415px) {
   h1 {
-    font-size: 24px; }
+    font-size: 24px;
+  }
 
   p {
-    font-size: 14px; }
+    font-size: 14px;
+  }
 
   nav ul li {
+    width: 75px;
+    padding: 15px;
+    border-bottom: 3px solid black;
     height: 16px;
     overflow: hidden;
-    margin-bottom: 30px;
-    font-family: "Sulphur Point", sans-serif; }
+    font-family: "Sulphur Point", sans-serif;
+  }
 
-  nav ul li:active {
-    color: red; }
+  nav ul li a {
+    padding: 0 2px;
+  }
+
+  nav ul li:last-child {
+    border: none !important;
+    margin-bottom: 30px !important;
+    padding-bottom: none;
+  }
 
   nav a {
     text-decoration: none;
-    color: black; }
+    color: black;
+  }
 
   nav ul {
     padding: 0 40px;
@@ -33,52 +49,149 @@ body {
     flex-direction: column;
     list-style-type: none;
     align-items: center;
-    margin: 0; }
+    margin: 0;
+  }
 
   nav {
     margin: 3px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
 
   #logo {
     margin: 5px 0 0 5px;
     width: 20vw;
-    height: 20vw; }
+    height: 20vw;
+  }
 
   #burgerMenu {
     position: absolute;
     right: 0;
     margin: 10px 10px 0 0;
     width: 50px;
-    height: 50px; }
+    height: 50px;
+  }
 
   #navWrapper {
     width: 0;
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: start;
     opacity: 0;
-    border: 1px solid black !important;
-    transition: width .5s ease-in-out,opacity .5s ease-in-out, max-height .5s ease-in-out .5s; }
+    transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+    margin-bottom: 15px;
+  }
 
   .showMenu {
     opacity: 1 !important;
     margin-right: 3px;
     max-height: 230px !important;
-    width: 45vw !important; }
+    width: 45vw !important;
+  }
 
   #closeButton {
+    font-weight: bolder;
     width: 10px;
     margin: 5px 5px 20px 5px !important;
     align-self: flex-end;
-    right: 0; }
+    right: 0;
+  }
 
+  #welcomeSection {
+    max-height: 375px;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+
+  #welcomeTxt {
+    z-index: 2;
+    position: absolute;
+    justify-self: center;
+    color: #dedede;
+    margin: 20vw 10vw;
+  }
+
+  #welcomeHero {
+    width: 100%;
+    z-index: -2;
+    position: relative;
+  }
+
+  .zoom {
+    animation: scale 40s linear infinite;
+  }
+
+  @keyframes scale {
+    50% {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
   #aboutBody {
     margin: auto;
     width: 80%;
-    align-self: center; } }
+    align-self: center;
+  }
+
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+  }
+
+  .formGroup label {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  #nameInput {
+    padding: 0 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 60%;
+    height: 10vw;
+    border: 2px solid black;
+  }
+
+  #emailInput {
+    padding: 0 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 60%;
+    height: 10vw;
+    border: 2px solid black;
+  }
+
+  #messageInput {
+    padding: 0 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 60%;
+    height: 30vw;
+    border: 2px solid black;
+  }
+
+  .button {
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    height: 15vw;
+    background-color: #89ff52;
+    border: 2px solid black;
+    border-radius: 3px;
+  }
+
+  .button:active {
+    background-color: #6bf72a;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/772b1c5ce3.js" crossorigin="anonymous"></script>
     <title>Guilherme Bueno's Portfolio</title>
 </head>
 <body>
@@ -15,17 +16,19 @@
     <div id="navWrapper">
         <p id="closeButton">X</p>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#welcomeSection">Home</a></li>
+            <li><a href="#portfolioPieces">Projects</a></li>
+            <li><a href="#aboutMe">About Me</a></li>
+            <li><a href="#contactForm">Contact</a></li>
     </ul>
     </div>
     </nav>
-    <section id="welcomeSection">
+    <div id="welcomeSection">
+        
         <h1 id="welcomeTxt">Hi, I'm Gui, and I'm a front-end Dev.</h1>
+        <img src="images/mobileBG.jpg" alt="Background" id="welcomeHero" class="zoom">
 
-    </section>
+    </div>
       <section id="portfolioPieces">
         <div class="pieceBox">
             <img src="" alt="" class="piecePreview">
@@ -42,25 +45,30 @@
     </section>
     <section id="aboutMe">
         <h1 id="aboutTitle">About Me</h1>
-        <p id="aboutBody">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consequuntur quis totam facilis dolore, aperiam aliquid officiis modi eius, quasi ratione pariatur et molestias laboriosam? Soluta excepturi nam architecto quia!
-        Officiis, voluptates incidunt reprehenderit, amet architecto totam natus mollitia ad quam non maxime? Laboriosam unde doloremque odit dignissimos excepturi aliquid molestiae, quos quibusdam ratione praesentium, voluptatibus perspiciatis ipsa, accusamus expedita?
-        Natus, ex! Odit dolor in beatae dolores iure sed nobis doloremque incidunt excepturi, optio earum blanditiis, maxime recusandae. Quam repellat harum corrupti! Quo libero consequatur dignissimos optio, doloremque nam voluptate.</p>
+        <p id="aboutBody">My name is Guilherme Sanches Bueno Da Silva (Yes, very long and difficult to say it, I know), but you may refer to me as Gui. I'm 20 years old, Brazilian and currently a Web developing student and aspiring front-end dev. <br>
+        I love building web applications from scratch and have a lot of fun using JavaScript. To me, coding in JavaScript is very fun because of this language's versatility.<br>
+        One of my Hobbies is reading random questions and answers on StackOverflow, or even Web Dev blogs and articles. I'm very passionate about learning and staying current on web development.
+        </p>
+    </section>
+    <section id="resume">
+        <h1>My Skills</h1>
     </section>
     <section id="contactForm">
+        <h1>Contact Me!</h1>
         <div class="formGroup">
-            <label><i class="" aria-hidden="true"></i> Name</label>
-            <input type="text" name="name" class="" placeholder="Enter Name">
+            <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+            <input type="text" name="name" class="" placeholder="Enter Name" id="nameInput">
         </div>
         <div class="formGroup"> 
 			<label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label> 
-			<input type="email" name="email" class="form-control" placeholder="Enter Email"> 
+			<input type="email" name="email" class="form-control" placeholder="Enter Email" id="emailInput"> 
 		</div>
         <div class="formGroup"> 
 			<label><i class="fa fa-comment" aria-hidden="true"></i> Message</label> 
-			<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea> 
+			<textarea rows="3" name="message" class="form-control" placeholder="Type Your Message" id="messageInput"></textarea> 
 		</div>
         <div class="formGroup">
-			<button class="btn btn-raised btn-block btn-danger">Post →</button>
+			<button class="button">Send</button>
 		</div>
     </section>
   
