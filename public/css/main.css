@@ -121,7 +121,7 @@ body {
   }
 
   .zoom {
-    animation: scale 30s linear infinite;
+    animation: scale 20s linear infinite;
   }
 
   @keyframes scale {
