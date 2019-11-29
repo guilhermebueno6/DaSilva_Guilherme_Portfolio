@@ -4,7 +4,7 @@
 main{
     font-family: $StdFont2;
     text-align: center;
-    
+    color: $themeColour1;
     width: 100vw;
     height: 100vh;
 }
@@ -21,7 +21,7 @@ body{
     nav ul li{
         width: 75px;
         padding: 15px;
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid $themeColour1;
         height: 16px;
         overflow: hidden;
         
@@ -38,7 +38,7 @@ body{
    
     nav a{
         text-decoration: none;
-        color: $textColor;
+        color: $themeColour1;
     }
     nav ul{
         
@@ -156,7 +156,7 @@ body{
         border-radius: 10px;
         width: 60%;
         height: 10vw;
-        border: 2px solid black;
+        border: 2px solid $themeColour1;
     }
     #emailInput{
         padding: 0 10px;
@@ -164,7 +164,7 @@ body{
         border-radius: 10px;
         width: 60%;
         height: 10vw;
-        border: 2px solid black;
+        border: 2px solid $themeColour1;
     }
     #messageInput{
         padding: 0 10px;
@@ -172,19 +172,19 @@ body{
         border-radius: 10px;
         width: 60%;
         height: 30vw;
-        border: 2px solid black;
+        border: 2px solid $themeColour1;
     }
     .button{
         font-size: $mobileTitle;
         font-weight: bold;
         width: 50%;
         height: 15vw;
-        background-color: rgb(137, 255, 82);
-        border: 2px solid black;
-        border-radius: 3px;
+        background-color: $themeColour2;
+        border: 2px solid $themeColour1;
+        border-radius: 5px;
     }
     .button:active{
-background-color: rgb(107, 247, 42);
+background-color: $themeColour3;
     }
     .subtitle{
         font-size: $mobileSubT;
@@ -207,6 +207,45 @@ background-color: rgb(107, 247, 42);
     #resume h1{
         margin: 20px 0 0 0;
     }
+    .pieceBox h2{
+        font-size: $mobileSubT;
+    }
+    .pieceBox h3{
+        margin-bottom: 5px;
+    }
+   
+    .thermo img{
+        width: 60vw;
+        margin: auto;
+    }
+    .typhoon img{
+        width:60vw;
+        margin: auto;
+    }
+    .musicMixer img{
+        height: 20vw;
+        margin: auto;
+    }
+    #portfolioPieces{
+        margin: 30px 0;
+    }
+
+    .typhoon, .musicMixer, .portfolioPieces{
+        margin-bottom: 5px;
+        margin-top: 15px;
+    }
+    @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+      
+        to {
+          opacity: 1;
+        }
+      }
+      .fadeIn {
+        animation-name: fadeIn;
+      }
    
     
 }
