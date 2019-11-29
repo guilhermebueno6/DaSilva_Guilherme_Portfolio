@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
 main {
-  font-family: "Sulphur Point", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   width: 100vw;
   height: 100vh;
@@ -121,7 +121,7 @@ body {
   }
 
   .zoom {
-    animation: scale 40s linear infinite;
+    animation: scale 30s linear infinite;
   }
 
   @keyframes scale {
@@ -136,7 +136,8 @@ body {
   #aboutBody {
     margin: auto;
     width: 80%;
-    align-self: center;
+    text-align: start;
+    line-height: 110%;
   }
 
   .formGroup {
@@ -154,7 +155,7 @@ body {
 
   #nameInput {
     padding: 0 10px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     width: 60%;
     height: 10vw;
@@ -163,7 +164,7 @@ body {
 
   #emailInput {
     padding: 0 10px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     width: 60%;
     height: 10vw;
@@ -172,7 +173,7 @@ body {
 
   #messageInput {
     padding: 0 10px;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     width: 60%;
     height: 30vw;
@@ -191,6 +192,31 @@ body {
 
   .button:active {
     background-color: #6bf72a;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    font-family: "Sulphur Point", sans-serif !important;
+  }
+
+  #resumewrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  #resumewrapper ul li {
+    text-align: start;
+  }
+
+  .resumeBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resume h1 {
+    margin: 20px 0 0 0;
   }
 }
 

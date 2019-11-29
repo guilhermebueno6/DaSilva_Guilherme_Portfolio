@@ -2,7 +2,7 @@
 @import "_vars";
 
 main{
-    font-family: $StdFont;
+    font-family: $StdFont2;
     text-align: center;
     
     width: 100vw;
@@ -122,7 +122,7 @@ body{
         position:relative;
     }
     .zoom {
-        animation: scale 40s linear infinite;
+        animation: scale 30s linear infinite;
       }
       @keyframes scale {
         50% {
@@ -136,7 +136,8 @@ body{
     #aboutBody{
         margin: auto;
         width:80%;
-        align-self: center;
+        text-align: start;
+        line-height: 110%;
     }
     .formGroup{
         display: flex;
@@ -184,6 +185,27 @@ body{
     }
     .button:active{
 background-color: rgb(107, 247, 42);
+    }
+    .subtitle{
+        font-size: $mobileSubT;
+        font-family: $StdFont!important;
+    }
+    #resumewrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    #resumewrapper ul li{
+        text-align: start;
+    }
+    .resumeBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #resume h1{
+        margin: 20px 0 0 0;
     }
    
     
