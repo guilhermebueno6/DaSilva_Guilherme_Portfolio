@@ -244,6 +244,7 @@ background-color: $themeColour3;
         opacity: 1!important;
       }
       .portfolioPages {
+          min-height: 100vh;
           position: absolute;
           text-align: center;
           width: 0;

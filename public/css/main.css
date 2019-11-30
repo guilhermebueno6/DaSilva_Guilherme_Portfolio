@@ -259,6 +259,7 @@ body {
   }
 
   .portfolioPages {
+    min-height: 100vh;
     position: absolute;
     text-align: center;
     width: 0;
