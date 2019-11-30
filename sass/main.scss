@@ -2,6 +2,7 @@
 @import "_vars";
 
 main{
+    
     font-family: $StdFont2;
     text-align: center;
     color: $themeColour1;
@@ -9,6 +10,7 @@ main{
     height: 100vh;
 }
 body{
+    
     margin: 0;
 }
 @media screen and(max-width:415px){
@@ -212,6 +214,7 @@ background-color: $themeColour3;
     }
     .pieceBox h3{
         margin-bottom: 5px;
+        margin-top: 30px;
     }
    
     .thermo img{
@@ -229,23 +232,56 @@ background-color: $themeColour3;
     #portfolioPieces{
         margin: 30px 0;
     }
+    
 
     .typhoon, .musicMixer, .portfolioPieces{
         margin-bottom: 5px;
         margin-top: 15px;
     }
-    @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-      
-        to {
-          opacity: 1;
-        }
-      }
+   
       .fadeIn {
-        animation-name: fadeIn;
+        width: auto!important;
+        opacity: 1!important;
       }
+      .portfolioPages {
+          position: absolute;
+          text-align: center;
+          width: 0;
+          display: flex;
+          opacity: 0;
+          background-color: $themeColour2;
+          overflow: hidden;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          font-family: $StdFont2;
+          color: $themeColour1;
+          transition: all .5s ease-in-out;
+          
+      }
+      .portfolioPages img{
+          width: 90vw;
+          border-radius: 10px;
+          margin-bottom: 10vw;
+          
+      }
+      .closePage{
+        position: absolute;
+        z-index: 2;
+        right: 10px;
+        top:10px;
+        margin: 0;
+        font-weight: lighter;
+      }
+      .portfolioPages h2{
+
+          margin-top: 0;
+      }
+      .portfolioPages p{
+          width: 90vw;
+          margin-top: 0;
+      }
+
    
     
 }
