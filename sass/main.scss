@@ -13,7 +13,8 @@ body{
     
     margin: 0;
 }
-@media screen and(max-width:415px){
+
+
     h1{
         font-size: $mobileTitle;
     }
@@ -206,6 +207,9 @@ background-color: $themeColour3;
         flex-direction: column;
         align-items: center;
     }
+    .resumeBox h2{
+        font-size: $desktopSubT;
+    }
     #resume h1{
         margin: 20px 0 0 0;
     }
@@ -240,7 +244,7 @@ background-color: $themeColour3;
     }
    
       .fadeIn {
-        width: auto!important;
+        width:100vw!important;
         opacity: 1!important;
       }
       .portfolioPages {
@@ -250,7 +254,7 @@ background-color: $themeColour3;
           width: 0;
           display: flex;
           opacity: 0;
-          background-color: $themeColour2;
+         
           overflow: hidden;
           flex-direction: column;
           justify-content: flex-start;
@@ -283,6 +287,144 @@ background-color: $themeColour3;
           margin-top: 0;
       }
 
+      @media only screen and (max-width: 1024px) and (min-width: 415px){
+          body{
+              font-size: $tabletBody;
+          }
+        h1{
+            font-size: $tabletTitle;
+        }
+        h2{
+            font-size: $tabletSubT;
+        }
+        p{
+            font-size: 22px;
+        }
+        .subtitle {
+            font-size: $tabletSubT;
+        }
+        #messageInput{
+            font-size: $tabletSubT;
+        }
+        #nameInput{
+            font-size: $tabletSubT;
+        }
+        #emailInput{
+            font-size: $tabletSubT;
+        }
+        .showMenu{
+            max-height: 350px!important
+
+        }
+        nav ul li{
+            width: 150px;
+        }
+        #closeButton{
+            font-size: 40px;
+            width: auto;
+        }
+        .pieceBox h2{
+            font-size: $tabletSubT;
+        }
+        .formGroup label{
+            font-size: $tabletSubT!important;
+        }
+        .button{
+            font-size: $tabletSubT;
+        }
+        #burgerMenu{
+            width: 100px;
+            height: 100px;
+        }
+
+    }
+    @media only screen and (min-width: 1025px){
+        #logo{
+            max-height: 200px;
+            max-width: 200px;
+        }
+        #navWrapper{
+            opacity: 1 !important;
+            margin-right: 3px;
+            max-height: 230px !important;
+            width: auto !important;
+            align-items: center;
+
+    }
+    #burgerMenu{
+        display: none;
+    }
+    nav ul{
+        margin-right: 50px;
+        margin-top: 10%;
+        flex-direction: row;
+        font-size:$desktopSubT ;
+    }
+    nav ul li{
+        height: auto;
+        width: auto;
+        margin: 0!important;
+        border: none!important;
+        
+    }
+    nav ul li:last-child{
+        margin: 0!important;
+    }
+    h1{
+        font-size: $desktopTitle!important;
+    }
+    #welcomeTxt{
+        margin: 10vw 30vw;
+    }
+    #closeButton{
+        display:none;
+    }
+    .webDevP{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    .webDevP img{
+        width: 400px;
+    }
+    .musicMixer img{
+        height: 90px;
+    }
+    .pieceBox h2{
+        font-size: $desktopSubT;
+    }
+    .webDevP{
+        font-size: $desktopSubT!important;
+    }
+    .webDevP img:hover{
+        cursor: pointer;
+        filter: saturate(100%);
+    }
+    .button:hover{
+        cursor:pointer;
+    }
+    .resumeBox{
+        font-size: $desktopBody!important;
+    }
+    .webDevP img{
+        filter: saturate(50%);
+        transition: filter .3s;
+        margin-top: 50px;
+    }
+     #contactForm input{
+        width: 30%;
+        height: 100px;
+     }
+     #messageInput{
+         height: 15vw;
+         width: 30%;
+     }
+    
+     .button{
+         width: 20%;
+         height: 100px;
+     }
+}
    
     
-}
