@@ -1,4 +1,6 @@
 {
+  "description": "My Portfolio",
+  "name": "Guilherme Bueno",
     "require" : {
       "silex/silex": "^2.0.4",
       "monolog/monolog": "^1.22",
