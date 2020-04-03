@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
 @import "_vars";
 
+form{
+    width: 100%;
+    margin: auto;
+}
+nav{
+    margin:0;
+}
+
 main{
     
     font-family: $StdFont2;
@@ -27,9 +35,11 @@ body{
         border-bottom: 3px solid $themeColour1;
         height: 16px;
         overflow: hidden;
+        transition: border .5s;
         
         font-family: $StdFont;
     }
+    
     nav ul li a{
         padding: 0 2px;
     }
@@ -119,7 +129,7 @@ body{
     }
     #welcomeHero{
       
-        
+        overflow: hidden;
         width: 100%;
         z-index: -2;
         position:relative;
@@ -137,11 +147,29 @@ body{
         }
       }
     #aboutBody{
+        font-size: $desktopBody;
         margin: auto;
-        width:80%;
+        width:60%;
         text-align: start;
         line-height: 110%;
     }
+    #profilePic {
+        width: 60%;
+        margin-bottom: 25px;
+        border-radius: 60px;
+        
+      }
+      #profileCircle{
+          background-color: $themeColour2;
+
+          width: 30vw;
+          height: 30vw;
+          border-radius: 800px;
+         
+          
+          margin: auto;
+          margin-bottom: 25px;
+      }
     .formGroup{
         display: flex;
         flex-direction: column;
@@ -157,7 +185,7 @@ body{
         padding: 0 10px;
         font-size: $mobileSubT;
         border-radius: 10px;
-        width: 60%;
+        width: 80%;
         height: 10vw;
         border: 2px solid $themeColour1;
     }
@@ -165,7 +193,7 @@ body{
         padding: 0 10px;
         font-size: $mobileSubT;
         border-radius: 10px;
-        width: 60%;
+        width: 80%;
         height: 10vw;
         border: 2px solid $themeColour1;
     }
@@ -173,7 +201,7 @@ body{
         padding: 0 10px;
         font-size: $mobileSubT;
         border-radius: 10px;
-        width: 60%;
+        width: 80%;
         height: 30vw;
         border: 2px solid $themeColour1;
     }
@@ -181,7 +209,7 @@ body{
         font-size: $mobileTitle;
         font-weight: bold;
         width: 50%;
-        height: 15vw;
+        height: 10vw;
         background-color: $themeColour2;
         border: 2px solid $themeColour1;
         border-radius: 5px;
@@ -193,13 +221,17 @@ background-color: $themeColour3;
         font-size: $mobileSubT;
         font-family: $StdFont!important;
     }
+  section{
+      margin-bottom: 50px;
+  }
     #resumewrapper{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         
     }
     #resumewrapper ul li{
+        font-size: $desktopBody;
         text-align: start;
     }
     .resumeBox{
@@ -211,6 +243,7 @@ background-color: $themeColour3;
         font-size: $desktopSubT;
     }
     #resume h1{
+        font-size: $desktopTitle;
         margin: 20px 0 0 0;
     }
     .pieceBox h2{
@@ -328,6 +361,7 @@ background-color: $themeColour3;
         }
         .formGroup label{
             font-size: $tabletSubT!important;
+           
         }
         .button{
             font-size: $tabletSubT;
@@ -413,17 +447,17 @@ background-color: $themeColour3;
         margin-top: 50px;
     }
      #contactForm input{
-        width: 30%;
-        height: 100px;
+        width: 60%;
+        height: 50px;
      }
      #messageInput{
          height: 15vw;
-         width: 30%;
+         width: 60%;
      }
     
      .button{
          width: 20%;
-         height: 100px;
+         height: 50px;
      }
 }
    
