@@ -1,3 +1,19 @@
+<?php
+require_once 'email.php';
+
+
+if (isset($_POST['submit'])){
+    $message = trim($_POST['message']);
+    $email = trim($_POST['email']);
+    $name =trim($_POST['name']);
+
+    sendEmail($name, $email, $message);
+}
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
