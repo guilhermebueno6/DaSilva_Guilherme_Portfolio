@@ -6,6 +6,8 @@ require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
+function sendEmail($name, $email, $message){
+
 
 $mail = new PHPMailer(true);
 
@@ -17,7 +19,7 @@ $mail = new PHPMailer(true);
             $mail->SMTPSecure = 'tls';                  // Enable TLS encryption, `ssl` also accepted
             $mail->Port = 587;                          // TCP port to connect to
 
-            $mail->setFrom('research@noreply.com', 'research');
+            $mail->setFrom('research@noreply.com', 'Contect Form from Portfolio');
 
             $mail->isHTML(true);  // Set email format to HTML
             $bodyContent = '<p>Someone called '.$name.' just contacted me. <br>
@@ -25,7 +27,7 @@ $mail = new PHPMailer(true);
 
 
             $mail->Subject = 'Contact From your Portfolio Website';
-            $mail->addAddress('guilhermebueeno6@gmail.com');   // Add a recipient
+            $mail->addAddress('guilhermebueno6@gmail.com');   // Add a recipient
             $mail->Body    = $bodyContent;
 
             if(!$mail->send()) {
@@ -35,4 +37,5 @@ $mail = new PHPMailer(true);
                 echo 'Message has been sent';
                 
             }
+        }
 ?>
