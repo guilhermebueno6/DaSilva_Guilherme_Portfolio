@@ -2,9 +2,9 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '/PHPMailer/src/Exception.php';
-require '/PHPMailer/src/PHPMailer.php';
-require '/PHPMailer/src/SMTP.php';
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
 function sendEmail($name, $email, $message){
 
@@ -17,7 +17,7 @@ $mail = new PHPMailer(true);
             $mail->Username = 'panCMS8@gmail.com';          // SMTP username
             $mail->Password = 'research2CMS'; // SMTP password
             $mail->SMTPSecure = 'tls';                  // Enable TLS encryption, `ssl` also accepted
-            $mail->Port = 587;                          // TCP port to connect to
+            $mail->Port = 465;                          // TCP port to connect to
 
             $mail->setFrom('research@noreply.com', 'Contect Form from Portfolio');
 
