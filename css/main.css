@@ -1,4 +1,52 @@
 @import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
+#portfolioGallery {
+  display: flex;
+  flex-direction: row;
+}
+
+#portfolioGallery a {
+  font-size: 28px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Sulphur Point", sans-serif;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 25px;
+  bottom: 0;
+}
+
+#footer h3 {
+  font-size: 28px;
+  color: white;
+  margin: 0;
+}
+
+.socialIcons {
+  margin-bottom: 10px;
+  font-size: 40px !important;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+}
+
+.socialIcons:hover {
+  color: grey;
+}
+
+.active {
+  background-color: black;
+  border-radius: 15px;
+}
+
+.active a {
+  color: white;
+}
+
 form {
   width: 100%;
   margin: auto;
@@ -406,7 +454,7 @@ section {
   #navWrapper {
     opacity: 1 !important;
     margin-right: 3px;
-    max-height: 230px !important;
+    max-height: 250px !important;
     width: auto !important;
     align-items: center;
   }

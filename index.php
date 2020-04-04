@@ -87,7 +87,9 @@ if (isset($_POST['submit'])){
             </form>
 		</div></div>
     </section>
+    <?php require 'templates/footer.php';?>
     </main>
+    
 
     <script src="js/main.js"></script>
 </body>

@@ -1,5 +1,51 @@
 @import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
 @import "_vars";
+#portfolioGallery{
+    display: flex;
+    flex-direction: row;
+
+
+}
+#portfolioGallery a{
+    font-size: $desktopBody;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: $StdFont;
+}
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 25px;
+    bottom: 0;
+}
+#footer h3{
+    font-size: $desktopBody;
+    color: white;
+    margin:0;
+}
+.socialIcons{
+    margin-bottom: 10px;
+    font-size: $desktopSubT!important;
+    text-decoration: none;
+    color: white;
+    font-size: $desktopBody;
+}
+.socialIcons:hover{
+    
+    color: grey;
+}
+
+.active{
+    background-color: black;
+    border-radius: 15px;
+    
+}
+.active a{
+    color: white;
+}
 
 form{
     width: 100%;
@@ -373,6 +419,8 @@ background-color: $themeColour3;
 
     }
     @media only screen and (min-width: 1025px){
+        
+        
         #logo{
             max-height: 200px;
             max-width: 200px;
@@ -380,7 +428,7 @@ background-color: $themeColour3;
         #navWrapper{
             opacity: 1 !important;
             margin-right: 3px;
-            max-height: 230px !important;
+            max-height: 250px !important;
             width: auto !important;
             align-items: center;
 

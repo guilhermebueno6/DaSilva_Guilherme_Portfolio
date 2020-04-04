@@ -4,10 +4,10 @@
     <div id="navWrapper">
         <p id="closeButton">X</p>
         <ul>
-            <li><a href="#welcomeSection">Home</a></li>
-            <li><a href="#portfolioPieces">Projects</a></li>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#contactForm">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li id="PPieces"><a href="portfolioPieces.php">Projects</a></li>
+            <li><a href="index.php#aboutMe">About Me</a></li>
+            <li><a href="index.php#contactForm">Contact</a></li>
     </ul>
     </div>
     </nav>

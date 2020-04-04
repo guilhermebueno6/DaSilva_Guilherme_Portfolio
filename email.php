@@ -31,10 +31,10 @@ $mail = new PHPMailer(true);
             $mail->Body    = $bodyContent;
 
             if(!$mail->send()) {
-                echo 'Message could not be sent.';
-                echo 'Mailer Error: ' . $mail->ErrorInfo;
+                $message = 'Message could not be sent.';
+                $message = $message.'   Mailer Error: ' . $mail->ErrorInfo;
             } else {
-                echo 'Message has been sent';
+                $message =  'Message has been sent';
                 
             }
         }
