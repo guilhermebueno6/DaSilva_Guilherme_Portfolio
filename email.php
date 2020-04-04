@@ -13,7 +13,7 @@ $mail = new PHPMailer(true);
 
             $mail->SMTPDebug = 2;
             $mail->isSMTP();                            // Set mailer to use SMTP
-            $mail->Host = 'smtp.gmail.com';             // Specify main and backup SMTP servers
+            $mail->Host = 'tls://smtp.gmail.com';             // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                     // Enable SMTP authentication
             $mail->Username = 'panCMS8@gmail.com';          // SMTP username
             $mail->Password = 'research2CMS'; // SMTP password
