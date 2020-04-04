@@ -17,7 +17,7 @@ $mail = new PHPMailer(true);
             $mail->Username = 'panCMS8@gmail.com';          // SMTP username
             $mail->Password = 'research2CMS'; // SMTP password
             $mail->SMTPSecure = 'tls';                  // Enable TLS encryption, `ssl` also accepted
-            $mail->Port = 465;                          // TCP port to connect to
+            $mail->Port = 587;                          // TCP port to connect to
 
             $mail->setFrom('research@noreply.com', 'Contect Form from Portfolio');
 
@@ -31,11 +31,12 @@ $mail = new PHPMailer(true);
             $mail->Body    = $bodyContent;
 
             if(!$mail->send()) {
-                $message = 'Message could not be sent.';
-                $message = $message.'   Mailer Error: ' . $mail->ErrorInfo;
+                $mailMessage = 'Message could not be sent.';
+                $mailMessage = $mailMessage.'   Mailer Error: ' . $mail->ErrorInfo;
             } else {
-                $message =  'Message has been sent';
+                $mailMessage =  'Message has been sent';
                 
             }
+            return $mailMessage;
         }
 ?>

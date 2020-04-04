@@ -7,7 +7,7 @@ if (isset($_POST['submit'])){
     $email = trim($_POST['email']);
     $name =trim($_POST['name']);
 
-    sendEmail($name, $email, $message);
+    $mailMessage = sendEmail($name, $email, $message);
 }
 
 
@@ -84,6 +84,7 @@ if (isset($_POST['submit'])){
 		</div>
         <div class="formGroup">
             <button name="submit" class="button">Send</button>
+            <h4><?php echo !empty($mailMessage)?$mailMessage:'';?></h4>
             </form>
 		</div></div>
     </section>
