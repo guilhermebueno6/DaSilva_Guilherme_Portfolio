@@ -11,7 +11,7 @@ function sendEmail($name, $email, $message){
 
 $mail = new PHPMailer(true);
 
-            $mail->isSMTP();                            // Set mailer to use SMTP
+            // $mail->isSMTP();                            // Set mailer to use SMTP
             $mail->Host = 'smtp.gmail.com';             // Specify main and backup SMTP servers
             $mail->SMTPAuth = true;                     // Enable SMTP authentication
             $mail->Username = 'panCMS8@gmail.com';          // SMTP username
