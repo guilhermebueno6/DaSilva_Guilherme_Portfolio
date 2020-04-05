@@ -1,15 +1,49 @@
 @import url("https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap");
-#portfolioGallery {
-  display: flex;
-  flex-direction: row;
+#carousel img {
+  width: 100vw;
+  height: auto;
 }
 
-#portfolioGallery a {
-  font-size: 28px;
-  margin-right: 10px;
-  text-decoration: none;
-  color: black;
-  font-family: "Sulphur Point", sans-serif;
+#carousel {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#carousel li {
+  display: block;
+  list-style: none;
+}
+
+#pieces button.prev, button.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #FFF;
+  background-color: #333;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+}
+
+button.prev {
+  position: absolute;
+  left: 0;
+  top: 42vh !important;
+}
+
+button.next {
+  position: absolute;
+  right: 0;
+  top: 42vh !important;
+}
+
+#pieces h3 {
+  font-size: 14px;
+  width: 70%;
+  margin: auto;
 }
 
 #footer {
@@ -21,9 +55,27 @@
 }
 
 #footer h3 {
-  font-size: 28px;
+  font-size: 14px;
   color: white;
   margin: 0;
+}
+
+#portfolioGallery a {
+  font-size: 14px;
+  margin-top: 25px;
+  text-decoration: none;
+  color: black;
+  margin-right: 40px;
+}
+
+#portfolioGallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#portfolioGallery a:hover {
+  color: grey;
 }
 
 .socialIcons {
@@ -31,7 +83,7 @@
   font-size: 40px !important;
   text-decoration: none;
   color: white;
-  font-size: 28px;
+  font-size: 14px;
 }
 
 .socialIcons:hover {
@@ -383,6 +435,70 @@ section {
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 415px) {
+  #carousel img {
+    width: 100vw;
+    height: auto;
+  }
+
+  #carousel {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #carousel li {
+    display: block;
+    list-style: none;
+  }
+
+  #pieces button.prev, button.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #FFF;
+    background-color: #333;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+
+  button.prev {
+    position: absolute;
+    left: 0;
+    top: 50vh !important;
+  }
+
+  button.next {
+    position: absolute;
+    right: 0;
+    top: 50vh !important;
+  }
+
+  #pieces h3 {
+    font-size: 14px;
+    width: 70%;
+    margin: auto;
+  }
+
+  #portfolioGallery a {
+    font-size: 18px;
+  }
+
+  #footer h3 {
+    font-size: 18px !important;
+  }
+
+  .socialIcons {
+    font-size: 18px !important;
+  }
+
+  #pieces video {
+    width: 100vw;
+    height: auto;
+  }
+
   body {
     font-size: 28px;
   }
@@ -446,6 +562,57 @@ section {
   }
 }
 @media only screen and (min-width: 1025px) {
+  #carousel img {
+    width: 100vw;
+    height: auto;
+  }
+
+  #carousel {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #carousel li {
+    display: block;
+    list-style: none;
+  }
+
+  #pieces button.prev, button.next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #FFF;
+    background-color: #333;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+  }
+
+  button.prev {
+    position: absolute;
+    left: 0;
+    top: 80vh !important;
+  }
+
+  button.next {
+    position: absolute;
+    right: 0;
+    top: 80vh !important;
+  }
+
+  #pieces h3 {
+    font-size: 28px;
+    width: 70%;
+    margin: auto;
+  }
+
+  #portfolioGallery a {
+    font-size: 28px;
+  }
+
   #logo {
     max-height: 200px;
     max-width: 200px;

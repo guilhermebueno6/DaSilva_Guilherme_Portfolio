@@ -109,6 +109,8 @@ function getMyAssignment($piece){
         <li><img src="images/AW17.png" alt="Anglers Website"></li>
         <li><img src="images/AW18.png" alt="Anglers Website"></li>
         <li><img src="images/AW19.png" alt="Anglers Website"></li></ul>
+        <button class="prev" onclick="show(-1)">&lt;</button>
+        <button class="next" onclick="show(+1)">&gt;</button>
         <h3>This was an update on The TRAA website, an organization located by Thams River in London, ON. The association had an outdated website and reached out to check whether they could get an update on it.</h3>';
     }
     if($piece=='MCMS'){
@@ -142,44 +144,44 @@ function getMyAssignment($piece){
         <button class="next" onclick="show(+1)">&gt;</button>
         <h3>This was another proof of concept project, where you are able to filter all of the content on the website and login to your admin account and Add, delete and edit content within the website.</h3>';
     }
-    $message = $message.'<style>
-    ul {
-        display: flex;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
+    // $message = $message.'<style>
+    // ul {
+    //     display: flex;
+    //     margin: 0;
+    //     padding: 0;
+    //     overflow: hidden;
+    //   }
       
-      li {
-        display: block;
-        list-style: none;
-      }
+    //   li {
+    //     display: block;
+    //     list-style: none;
+    //   }
       
-      button.prev, button.next {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 32px;
-        color: #FFF;
-        background-color: #333;
-        border-radius: 50%;
-        width: 44px;
-        height: 44px;
-      }
-      button.prev {
-        position: absolute;
-        left: 0;
-        top: 100vh;
-      }
-      button.next {
-        position: absolute;
-        right: 0;
-        top: 100vh;
-      }
-      img{
-          height:100vh;
-      }
-    </style>';
+    //   button.prev, button.next {
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     font-size: 32px;
+    //     color: #FFF;
+    //     background-color: #333;
+    //     border-radius: 50%;
+    //     width: 44px;
+    //     height: 44px;
+    //   }
+    //   button.prev {
+    //     position: absolute;
+    //     left: 0;
+    //     top: 100vh;
+    //   }
+    //   button.next {
+    //     position: absolute;
+    //     right: 0;
+    //     top: 100vh;
+    //   }
+    //   img{
+    //       height:100vh;
+    //   }
+    // </style>';
     return $message;
 }
 ?>
