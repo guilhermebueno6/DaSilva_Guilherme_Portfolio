@@ -1,6 +1,9 @@
 <?php
 
+
+
 require_once 'dynamicAssignment.php';
+$message= getMyAssignment('H1');
 if (isset($_GET['filter'])){
     $piece = $_GET['filter'];
     $message = getMyAssignment($piece);
